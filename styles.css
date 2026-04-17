@@ -1,0 +1,164 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0d6efd, #0a58ca);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero img {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+/* Secciones */
+.section {
+  padding: 60px 20px;
+}
+
+.sobreMi{
+  text-align: justify;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* GitHub botón */
+.github-btn {
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.github-btn:hover {
+  background: white;
+  color: #0d6efd;
+}
+
+/* Tecnologías */
+.section img {
+  transition: 0.3s;
+}
+
+.section img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* FOTO PRINCIPAL (HERO) */
+.hero img {
+  width: 150px;
+  height: 150px;              /* MISMO tamaño siempre */
+  object-fit: cover;          /* recorta sin deformar */
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* LOGOS DE EMPRESAS */
+.company-logo {
+  width: 70px;
+  height: 70px;              /* tamaño fijo */
+  object-fit: contain;       /* evita deformar logos */
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* CONTENEDOR FLEX MEJORADO */
+.card-body {
+  align-items: flex-start;
+}
+
+/* RESPONSIVE PARA EXPERIENCIA */
+@media (max-width: 768px) {
+  .card-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .company-logo {
+    margin-bottom: 10px;
+  }
+}
+
+/* IMÁGENES DE TECNOLOGÍAS */
+.section img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.section img:hover {
+  transform: scale(1.15);
+}
+
+/* TARJETA DE CONTACTO */
+.contact-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Avatar */
+.contact-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #0d6efd;
+}
+
+/* Info */
+.contact-info p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #0d6efd;
+}
+
+/* Botón */
+.contact-btn {
+  border-radius: 25px;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}
