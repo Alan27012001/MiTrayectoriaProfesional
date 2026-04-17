@@ -19,7 +19,7 @@ body {
 
 /* Secciones */
 .section {
-  padding: 60px 20px;
+  padding: 40px 15px;
 }
 
 .sobreMi{
@@ -165,4 +165,23 @@ footer {
 
 .strong{
   font-weight: bold;
+}
+
+/* Imágenes (Tecnologías + Herramientas) */
+.section img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.section img:hover {
+  transform: scale(1.15);
+}
+
+/* Texto debajo */
+.strong {
+  font-weight: 600;
+  font-size: 0.9rem;
 }
