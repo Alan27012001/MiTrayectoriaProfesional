@@ -162,3 +162,7 @@ footer {
 .contact-btn:hover {
   transform: scale(1.05);
 }
+
+.strong{
+  font: bold;
+}
