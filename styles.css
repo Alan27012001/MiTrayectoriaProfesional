@@ -185,3 +185,28 @@ footer {
   font-weight: 600;
   font-size: 0.9rem;
 }
+
+/* BOTÓN CV */
+.btn-cv {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-cv:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(255, 65, 108, 0.5);
+  color: white;
+}
+
+/* CONTENEDOR BOTONES HERO */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
