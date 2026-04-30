@@ -11,6 +11,12 @@
 <body>
   <!-- HERO -->
   <header class="hero">
+    <!-- BOTÓN DARK MODE -->
+    <div class="theme-container">
+      <button id="themeToggle" class="theme-float-btn">
+        🌙
+      </button>
+    </div>
     <img src="img/alan.PNG" alt="Alan Pitones">
     <h1>Alan Roberto Pitones de León</h1>
     <p>Desarrollador .NET | C# | ASP.NET Core | Web API | SQL Server | Angular</p>
@@ -18,13 +24,11 @@
       <a href="https://github.com/Alan27012001" class="btn btn-outline-light btn-lg px-4 github-btn" target="_blank">
         <i class="bi bi-github"></i> Ver GitHub
       </a>
-
       <a href="documentos/Alan_Pitones_Desarrollador_NET.pdf" target="_blank" class="btn btn-cv btn-lg px-4">
         <i class="bi bi-file-earmark-pdf"></i> Descargar CV
       </a>
     </div>
   </header>
-
   <!-- SOBRE MI -->
   <section class="section container sobreMi">
     <h2>Sobre mí</h2>
@@ -39,26 +43,110 @@
       trabajando bajo metodologías ágiles (Scrum).
     </p>
   </section>
-
   <!-- TECNOLOGIAS -->
-  <section class="section container">
-    <h2>Tecnologías</h2>
-    <div class="row text-center">
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="60"><p class="strong">C#</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" width="60"><p class="strong">.NET</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="60"><p class="strong">Angular</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60"><p class="strong">JavaScript</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="60"><p class="strong">TypeScript</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60"><p class="strong">HTML</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60"><p class="strong">CSS</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="60"><p class="strong">Bootstrap</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" width="60"><p class="strong">SQL Server</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" width="60"><p class="strong">Oracle</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60"><p class="strong">GitHub</p></div>
-      <div class="col-md-2 col-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="60"><p class="strong">Azure</p></div>
+  <section class="section container tech-section">
+    <div class="text-center mb-2">
+      <h2 class="section-title">Tecnologías</h2>
+    </div>
+    <div class="row g-4">
+      <!-- BACKEND -->
+      <div class="col-lg-3 col-md-6">
+        <div class="tech-card h-100">
+          <div class="tech-header backend-gradient">
+            <h4>⚙️ Backend</h4>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg">
+              <span>C#</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg">
+              <span>.NET</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FRONTEND -->
+      <div class="col-lg-3 col-md-6">
+        <div class="tech-card h-100">
+          <div class="tech-header frontend-gradient">
+            <h4>🎨 Frontend</h4>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg">
+              <span>Angular</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
+              <span>TypeScript</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+              <span>HTML</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+              <span>CSS</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BASE DE DATOS -->
+      <div class="col-lg-3 col-md-6">
+        <div class="tech-card h-100">
+          <div class="tech-header db-gradient">
+            <h4>🗄️ Base de Datos</h4>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
+              <span>SQL Server</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg">
+              <span>Oracle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CLOUD / DEVOPS -->
+      <div class="col-lg-3 col-md-6">
+        <div class="tech-card h-100">
+          <div class="tech-header cloud-gradient">
+            <h4>☁️ Cloud / DevOps</h4>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg">
+              <span>Azure</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg">
+              <span>Azure DevOps</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+              <span>GitHub Actions</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
   <!-- HERRAMIENTAS -->
   <section class="section container">
     <h2>Herramientas</h2>
@@ -101,7 +189,6 @@
       </div>
     </div>
   </section>
-
   <!-- EXPERIENCIA -->
   <section class="section container">
     <h2>Experiencia</h2>
@@ -163,7 +250,6 @@
         </div>
       </div>
     </div>
-
     <!-- Yunntech -->
     <div class="card">
       <div class="card-body d-flex gap-3">
@@ -183,7 +269,6 @@
       </div>
     </div>
   </section>
-
   <!-- CONTACTO -->
   <section class="section container">
     <h2>Contacto</h2>
@@ -193,13 +278,11 @@
           <img src="img/alan.PNG" alt="Alan Pitones" class="contact-avatar">
           <h4>Alan Roberto Pitones de León</h4>
           <p class="text-muted">Desarrollador Full Stack .NET</p>
-
           <div class="contact-info">
             <p><i class="bi bi-envelope"></i> alan.roberto28012001@outlook.com</p>
             <p><i class="bi bi-telephone"></i> 8132769114</p>
             <p><i class="bi bi-geo-alt"></i> Ciudad Apodaca, Nuevo León</p>
           </div>
-
           <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
             <a href="https://github.com/Alan27012001" target="_blank" class="btn btn-dark contact-btn">
               <i class="bi bi-github"></i> GitHub
@@ -221,5 +304,6 @@
   <footer>
     <p>© 2026 Alan Pitones</p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>

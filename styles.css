@@ -19,7 +19,7 @@ body {
 
 /* Secciones */
 .section {
-  padding: 40px 15px;
+  padding: 25px 15px;
 }
 
 .sobreMi{
@@ -209,4 +209,313 @@ footer {
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 15px;
+}
+
+/* ===============================
+   RESPONSIVE MEJORADO TECNOLOGÍAS
+=================================*/
+
+/* GRID DE ICONOS */
+.tech-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+  padding:20px;
+}
+
+/* ITEM */
+.tech-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:110px;
+}
+
+.tech-item img{
+  width:55px;
+  height:55px;
+  object-fit:contain;
+  margin-bottom:8px;
+  transition:.3s;
+}
+
+.tech-item span{
+  font-size:.92rem;
+  font-weight:600;
+  line-height:1.2;
+}
+
+/* TARJETAS */
+.tech-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.tech-card:hover{
+  transform:translateY(-6px);
+}
+
+/* HEADER */
+.tech-header{
+  padding:16px;
+  color:#fff;
+  text-align:center;
+}
+
+.tech-header h4{
+  margin:0;
+  font-size:1.1rem;
+  font-weight:700;
+}
+
+/* GRADIENTES */
+.backend-gradient{
+  background:linear-gradient(135deg,#0d6efd,#0a58ca);
+}
+
+.frontend-gradient{
+  background:linear-gradient(135deg,#ff416c,#ff4b2b);
+}
+
+.db-gradient{
+  background:linear-gradient(135deg,#198754,#157347);
+}
+
+.cloud-gradient{
+  background:linear-gradient(135deg,#6f42c1,#4b2ca3);
+}
+
+/* ===============================
+   TABLET
+=================================*/
+@media (max-width: 992px){
+
+  .tech-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+
+/* ===============================
+   MOBILE
+=================================*/
+@media (max-width: 768px){
+
+  .section-title{
+    font-size:2rem;
+  }
+
+  .section-subtitle{
+    font-size:.95rem;
+    padding:0 10px;
+  }
+
+  .tech-card{
+    margin-bottom:10px;
+  }
+
+  .tech-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    padding:18px;
+  }
+
+  .tech-item{
+    min-height:95px;
+  }
+
+  .tech-item img{
+    width:48px;
+    height:48px;
+  }
+
+  .tech-item span{
+    font-size:.85rem;
+  }
+
+}
+
+/* ===============================
+   MOBILE PEQUEÑO
+=================================*/
+@media (max-width: 480px){
+
+  .tech-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    padding:15px;
+  }
+
+  .tech-header h4{
+    font-size:1rem;
+  }
+
+  .tech-item{
+    min-height:88px;
+  }
+
+  .tech-item img{
+    width:42px;
+    height:42px;
+  }
+
+  .tech-item span{
+    font-size:.8rem;
+  }
+
+}
+
+/* VARIABLES */
+:root{
+  --bg:#ffffff;
+  --text:#111111;
+  --card:#ffffff;
+  --shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  transition:.3s;
+}
+
+/* MODO OSCURO */
+body.dark-mode{
+  --bg:#121212;
+  --text:#f5f5f5;
+  --card:#1e1e1e;
+  --shadow:0 8px 25px rgba(255,255,255,.05);
+}
+
+/* Cards */
+.card,
+.tech-card,
+.contact-card{
+  background:var(--card);
+  box-shadow:var(--shadow);
+  transition:.3s;
+}
+
+/* Botón */
+.theme-btn{
+  margin-top:20px;
+  padding:10px 18px;
+  border:none;
+  border-radius:30px;
+  font-weight:600;
+  cursor:pointer;
+  background:#fff;
+  color:#111;
+  transition:.3s;
+}
+
+.theme-btn:hover{
+  transform:scale(1.05);
+}
+
+body.dark-mode .theme-btn{
+  background:#333;
+  color:#fff;
+}
+
+/* Footer */
+footer{
+  transition:.3s;
+}
+
+body.dark-mode footer{
+  background:#000;
+}
+
+/* =========================
+   DARK MODE TEXTOS CARDS
+========================= */
+
+body.dark-mode .card,
+body.dark-mode .tech-card,
+body.dark-mode .contact-card{
+  color:#f5f5f5;
+}
+
+/* títulos experiencia */
+body.dark-mode .card h5,
+body.dark-mode .card h4,
+body.dark-mode .card h3{
+  color:#ffffff;
+}
+
+/* párrafos y fechas */
+body.dark-mode .card p,
+body.dark-mode .card em,
+body.dark-mode .card span{
+  color:#dcdcdc;
+}
+
+/* listas experiencia */
+body.dark-mode .card li{
+  color:#f1f1f1;
+}
+
+/* secciones generales */
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4{
+  color:#ffffff;
+}
+
+body.dark-mode p{
+  color:#e6e6e6;
+}
+
+/* Bootstrap text-muted corregido en Dark Mode */
+body.dark-mode .text-muted{
+  color: #cfcfcf !important;
+}
+
+/* AGREGA ESTO EN styles.css */
+
+/* BOTÓN FLOTANTE TIPO CHATGPT */
+.theme-float-btn{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 58px;
+    height: 58px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+
+    background: #111;
+    color: white;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+    transition: all .3s ease;
+}
+
+.theme-float-btn:hover{
+    transform: translateY(-4px) scale(1.05);
+}
+
+/* EN MODO OSCURO */
+body.dark-mode .theme-float-btn{
+    background: white;
+    color: #111;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .theme-float-btn{
+        width: 52px;
+        height: 52px;
+        font-size: 20px;
+        right: 15px;
+        bottom: 15px;
+    }
 }
